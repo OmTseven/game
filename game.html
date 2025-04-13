@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="target-color"></div>
+            <div class="score-board">Score: <span id="score">0</span></div>
+            <div class="timer">Time: <span id="time">30</span>s</div>
+        </div>
+        <div class="grid" id="gameGrid"></div>
+        <div class="game-over" id="gameOver">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
